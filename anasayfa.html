@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="ana.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" class="logo">
+            <h1 class="header-title"></h1>
+            <div class="cart-icon" onclick="window.location.href='cart.html'">&#128722;</div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="https://www.amazon.com.tr/s?i=electronics&rh=n%3A13709911031&fs=true&ref=lp_13709911031_sar" target="_blank">Elektronik</a></li>
+            <li><a href="https://www.amazon.com.tr/gp/browse.html?node=13710046031&ref_=nav_em_hm_sbc_ime_home_0_2_12_2" target="_blank">Ev Eşyaları</a></li>
+            <li><a href="https://www.amazon.com.tr/gp/browse.html?node=13709910031&ref_=nav_em_hm_sbc_ime_office_0_2_13_4" target="_blank">Kırtasiye</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="category">
+            <h2>Elektronik</h2>
+            <div class="product">
+                <img src="asus.png" alt="Ürün Fotoğrafı">
+                <h3>Asus Bilgisayar</h3>
+                <p>Fiyat: $30000.00</p>
+                <button onclick="addToCart('Asus Bilgisayar', 30000)">Sepete Ekle</button>
+            </div>
+            <div class="product">
+                <img src="iphone.jpeg" alt="Ürün Fotoğrafı">
+                <h3>Apple Telefon</h3>
+                <p>Fiyat: $1000</p>
+                <button onclick="addToCart('Apple Telefon', 1000)">Sepete Ekle</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71FNjvNjs1L._AC_SX569_.jpg" alt="Ürün Fotoğrafı">
+                <h3>Apple HomePod Mini</h3>
+                <p>Fiyat: $200</p>
+                <button onclick="addToCart('Apple HomePod Mini', 200)">Sepete Ekle</button>
+            </div>
+        </div>
+        <div class="category">
+            <h2>Ev Eşyaları</h2>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71-xe1Y6XpL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Ürün Fotoğrafı">
+                <h3>Oyuncu Masa 1</h3>
+                <p>Fiyat: $50</p>
+                <button onclick="addToCart('Oyuncu Masa 1', 50)">Sepete Ekle</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71XDwLrpg1L._AC_SY879_.jpg" alt="Ürün Fotoğrafı">
+                <h3>Nevresim Takımı</h3>
+                <p>Fiyat: $10</p>
+                <button onclick="addToCart('Nevresim Takımı', 10)">Sepete Ekle</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/31q06xJV7SL._AC_.jpg" alt="Ürün Fotoğrafı">
+                <h3>Küçük Dolap</h3>
+                <p>Fiyat: $20</p>
+                <button onclick="addToCart('Küçük Dolap', 20)">Sepete Ekle</button>
+            </div>
+        </div>
+        <div class="category">
+            <h2>Kırtasiye</h2>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/416cJlDzxcL._SX342_SY445_.jpg" alt="Ürün Fotoğrafı">
+                <h3>Üç Cisim Problemi</h3>
+                <p>Fiyat: $5</p>
+                <button onclick="addToCart('Üç Cisim Problemi', 5)">Sepete Ekle</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71kwNSwmymL._AC._SR360,460.jpg" alt="Ürün Fotoğrafı">
+                <h3>Kalemlik</h3>
+                <p>Fiyat: $3</p>
+                <button onclick="addToCart('Kalemlik', 3)">Sepete Ekle</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/51Xz9vyZkCL._AC._SR360,460.jpg" alt="Ürün Fotoğrafı">
+                <h3>Resim Çantası</h3>
+                <p>Fiyat: $8</p>
+                <button onclick="addToCart('Resim Çantası', 8)">Sepete Ekle</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <ul>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">Amazon'da Satış Yap</a></li>
+                <li><a href="#">Müşteri Hizmetleri</a></li>
+                <li><a href="#">Amazon Prime</a></li>
+                <li><a href="#">Gizlilik Bildirimi</a></li>
+                <li><a href="#">Kullanım Şartları</a></li>
+                <li><a href="#">İnternet Reklamcılığı</a></li>
+            </ul>
+            <p>&copy; 2024 Amazon.com, Inc. veya bağlı ortaklıkları</p>
+        </div>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>
